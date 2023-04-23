@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74c20290-ffd0-43b3-a47d-75b6a0c1f83e" name="Changes" comment="minor improvements">
-      <change afterPath="$PROJECT_DIR$/script_autogpt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script_gpt.py" afterDir="false" />
+    <list default="true" id="74c20290-ffd0-43b3-a47d-75b6a0c1f83e" name="Changes" comment="recreated script_gpt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script_gpt.py" beforeDir="false" afterPath="$PROJECT_DIR$/script_gpt.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="OPENAI_API_KEY" value="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" />
+        <env name="OPENAI_API_KEY" value="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" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -126,8 +125,8 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
+        <env name="OPENAI_API_KEY" value="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" />
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="OPENAI_API_KEY" value="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" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -170,7 +169,7 @@
       <workItem from="1682090704756" duration="2440000" />
       <workItem from="1682168282028" duration="5274000" />
       <workItem from="1682236222026" duration="646000" />
-      <workItem from="1682238169949" duration="3230000" />
+      <workItem from="1682238169949" duration="4238000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1682230882139</created>
@@ -200,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682262569845</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="recreated script_gpt">
+      <created>1682265242469</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682265242469</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,11 +240,12 @@
     <MESSAGE value="change openaikey to be env varibale" />
     <MESSAGE value="minor changes putting request data into variables" />
     <MESSAGE value="minor improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor improvements" />
+    <MESSAGE value="recreated script_gpt" />
+    <option name="LAST_COMMIT_MESSAGE" value="recreated script_gpt" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/yar_sandbox$main.coverage" NAME="main Coverage Results" MODIFIED="1682090760210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/yar_sandbox$script_autogpt.coverage" NAME="script_autogpt Coverage Results" MODIFIED="1682264294153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/yar_sandbox$script_gpt.coverage" NAME="script_gpt Coverage Results" MODIFIED="1682265143508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yar_sandbox$script_autogpt.coverage" NAME="script_autogpt Coverage Results" MODIFIED="1682265736134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yar_sandbox$script_gpt.coverage" NAME="script_gpt Coverage Results" MODIFIED="1682266437800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -4,7 +4,7 @@ import gpt_utils
 
 api_endpoint=" https://api.openai.com/v1/completions"
 api_key = os.environ['OPENAI_API_KEY']
-prompt = "write a 4 line poem about a dog. the poem should be happy and suitable for children."
+prompt = "write a 6 line poem about a dog. the poem should be happy and suitable for children."
 model ="text-davinci-003"
 
 
