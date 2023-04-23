@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74c20290-ffd0-43b3-a47d-75b6a0c1f83e" name="Changes" comment="initial commit">
+    <list default="true" id="74c20290-ffd0-43b3-a47d-75b6a0c1f83e" name="Changes" comment="change openaikey to be env varibale">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script-gpt.py" beforeDir="false" afterPath="$PROJECT_DIR$/script-gpt.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +110,7 @@
       <updated>1682087114433</updated>
       <workItem from="1682087171017" duration="2041000" />
       <workItem from="1682090704756" duration="2440000" />
-      <workItem from="1682168282028" duration="2939000" />
+      <workItem from="1682168282028" duration="4226000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1682230882139</created>
@@ -120,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682230882140</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="change openaikey to be env varibale">
+      <created>1682232340338</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682232340338</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +143,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
@@ -151,10 +157,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="change openaikey to be env varibale" />
+    <option name="LAST_COMMIT_MESSAGE" value="change openaikey to be env varibale" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/yar_sandbox$main.coverage" NAME="main Coverage Results" MODIFIED="1682090760210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/yar_sandbox$script_gpt.coverage" NAME="script-gpt Coverage Results" MODIFIED="1682168311714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yar_sandbox$script_gpt.coverage" NAME="script-gpt Coverage Results" MODIFIED="1682232522281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

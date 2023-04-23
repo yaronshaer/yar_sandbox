@@ -3,15 +3,16 @@ import requests
 
 api_endpoint=" https://api.openai.com/v1/completions"
 api_key = os.environ['OPENAI_API_KEY']
-
+prompt = "say this is a test"
+model ="text-davinci-003"
 request_headers = {
     "Content-Type": "application/json",
     "Authorization": "Bearer " + api_key
 }
 
 request_data = {
-    "model": "text-davinci-003",
-    "prompt": "who is Klarna's CEO?",
+    "model": model,
+    "prompt": prompt,
     "max_tokens": 100,
     "temperature": 0.5
 }
