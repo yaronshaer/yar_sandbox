@@ -2,9 +2,7 @@ import os
 import requests
 
 api_endpoint=" https://api.openai.com/v1/completions"
-api_key = "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"
-
-
+api_key = os.environ['OPENAI_API_KEY']
 
 request_headers = {
     "Content-Type": "application/json",
