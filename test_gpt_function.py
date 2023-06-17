@@ -2,7 +2,7 @@ import openai
 import json
 
 # Example dummy function hard coded to return the same weather
-# In production, this could be your backend API or an external API
+# In production, this could be your backend API or an external API. test yaron
 def get_current_weather(location, unit="celsius"):
     """Get the current weather in a given location"""
     weather_info = {
