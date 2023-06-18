@@ -16,7 +16,7 @@ pinecone_env = os.getenv("PINECONE_ENV")
 
 llm = OpenAI(temperature=0.9)
 
-#simple prompt fed to LLM via langchain
+#simple prompt fed to LLM through langchain
 prompt = "suggest the top 3 things to do in Stockholm with 2 young children aged 6 and 4."
 #print(llm(prompt))
 
