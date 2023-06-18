@@ -13,7 +13,7 @@ def get_current_weather(location, unit="celsius"):
     }
     return json.dumps(weather_info)
 
-# Step 1, send model the user query and what functions it has access to
+# Step 1, send model the user query and what functions it should to access 
 def run_conversation():
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo-0613",
