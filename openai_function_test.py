@@ -1,8 +1,10 @@
 import openai
 import json
+#write a function to get the current weather in a given location
+
 
 # Example dummy function hard coded to return the same weather
-# In production, this could be your backend API or an external API. test yaron
+# In production, this could be your backend API or an external API.
 def get_current_weather(location, unit="celsius"):
     """Get the current weather in a given location"""
     weather_info = {
