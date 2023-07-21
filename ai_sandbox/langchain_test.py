@@ -6,6 +6,9 @@ from langchain.agents import initialize_agent
 from langchain.llms import OpenAI
 from langchain.document_loaders import TextLoader
 from langchain.indexes import VectorstoreIndexCreator
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 api_key = os.getenv("OPENAI_API_KEY")
@@ -14,7 +17,7 @@ pinecone_key = os.getenv("PINECONE_API_KEY")
 pinecone_env = os.getenv("PINECONE_ENV")
 
 
-llm = OpenAI(temperature=0.9)
+llm = OpenAI(temperature=0.9,openai_api_key=api_key)
 
 #simple prompt fed to LLM through langchain
 prompt = "suggest the top 3 things to do in Stockholm with 2 young children aged 6 and 4."
