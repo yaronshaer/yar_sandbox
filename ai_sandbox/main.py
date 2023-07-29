@@ -23,7 +23,6 @@ if __name__ == "__main__":
 #do we have an openai api key?
 if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
     print("Please set OPENAI_API_KEY ")
-    print(f"your api key is {os.getenv('OPENAI_API_KEY')}")
     exit(1)
 else:
     openai_api_key = os.getenv("OPENAI_API_KEY")
@@ -41,7 +40,8 @@ print("You chatting with ChatGPT clone...")
 
 def chat_own_memory():
     print("Assistant has memory")
-    while True:
+    user_input = ""
+    while user_input.lower() != "quit":
         user_input = input("> ")
         messages.append(HumanMessage(content=user_input))
         ai_response = chat(messages)
@@ -82,6 +82,19 @@ def chat_summary_memmory():
         ai_response = conversation.predict(input=user_input)
         print("\nAssistant:\n",ai_response)
 
+def chat_openai():
+    print("Assistant is Openai vanilla")
+    import openai
+    openai.api_key = openai_api_key
+    user_input=""
+    while user_input.lower() != "exit":
+        user_input = input("> ")
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            messages=[{"role": "user", "content": user_input}])
+        print(response.choices[0].message.content)
+
+
 
 
 
@@ -99,13 +112,11 @@ if len(sys.argv)>=2:
     elif mem_argument == "sum_mem":
         chat_summary_memmory()
 
+    elif mem_argument == "buf_mem":
+        chat_buffer_memmory()
+        
     else:
         chat_no_memory()
 
 else:
-    chat_no_memory()
-
-
-
-
-
+    chat_openai()
