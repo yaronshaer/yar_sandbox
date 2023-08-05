@@ -28,6 +28,10 @@ else:
     openai_api_key = os.getenv("OPENAI_API_KEY")
     print("OPENAI_API_KEY set")
 
+langchain_api_key = os.getenv("LANGCHAIN_API_KEY")
+langchain_tracing = os.getenv("LANGCHAIN_TRACING_V2")
+langchain_endpoint = os.getenv("LANGCHAIN_ENDPOINT")
+langchain_project = os.getenv("LANGCHAIN_PROJECT")
 
 chat = ChatOpenAI(temperature=0.3, model="gpt-3.5-turbo")
 
@@ -39,7 +43,7 @@ messages = [SystemMessage(content=system_input),]
 print("You chatting with ChatGPT clone...")
 
 def chat_own_memory():
-    print("Assistant has memory")
+    print("Assistant has own built-in buffer memory")
     user_input = ""
     while user_input.lower() != "quit":
         user_input = input("> ")
@@ -83,7 +87,7 @@ def chat_summary_memmory():
         print("\nAssistant:\n",ai_response)
 
 def chat_openai():
-    print("Assistant is Openai vanilla")
+    print("Assistant is Openai vanilla with no memory")
     import openai
     openai.api_key = openai_api_key
     user_input=""
