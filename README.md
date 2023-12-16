@@ -1,1 +1,1 @@
-#Simple project to try AI functionality
+Simple project to try AI functionality
