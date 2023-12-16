@@ -55,16 +55,18 @@ def chat_own_memory():
 
 def chat_no_memory():
        print("Assistant has no memory")
-       while True:
-        user_input = input("> ")
-        messages = [SystemMessage(content=system_input),HumanMessage(content=user_input)]
-        ai_response = chat(messages)
-        print("\nAssistant:\n",ai_response.content)
+       user_input=""
+       while user_input.lower() != "quit":
+          user_input = input("> ")
+          messages = [SystemMessage(content=system_input),HumanMessage(content=user_input)]
+          ai_response = chat(messages)
+          print("\nAssistant:\n",ai_response.content)
 
 def chat_buffer_memmory():
     print("Assistant has buffer memory")
     conversation = ConversationChain(llm=chat, memory=ConversationBufferMemory(), verbose=True)
-    while True:
+    user_input=""
+    while user_input.lower() != "quit":
         user_input = input("> ")
         ai_response = conversation.predict(input=user_input)
         print("\nAssistant:\n",ai_response)
@@ -73,33 +75,32 @@ def chat_entity_memmory():
     print("Assistant has entity memory")
     conversation = ConversationChain(llm=chat, memory=ConversationEntityMemory(llm=chat), verbose=True, 
                                      prompt=ENTITY_MEMORY_CONVERSATION_TEMPLATE)
-    while True:
+    user_input=""
+    while user_input.lower() != "quit":
         user_input = input("> ")
         ai_response = conversation.predict(input=user_input)
         print("\nAssistant:\n",ai_response)
 
 def chat_summary_memmory():
     print("Assistant has summary memory")
+    user_input=""
     conversation = ConversationChain(llm=chat, memory=ConversationSummaryMemory(llm=chat), verbose=True)
-    while True:
+    while user_input.lower() != "quit":
         user_input = input("> ")
         ai_response = conversation.predict(input=user_input)
         print("\nAssistant:\n",ai_response)
 
 def chat_openai():
     print("Assistant is Openai vanilla with no memory")
-    import openai
-    openai.api_key = openai_api_key
+    from openai import OpenAI
+    
+    client = OpenAI(api_key=openai_api_key)
     user_input=""
-    while user_input.lower() != "exit":
+    while user_input.lower() != "quit":
         user_input = input("> ")
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": user_input}])
+        response = client.chat.completions.create(model="gpt-3.5-turbo",
+        messages=[{"role": "user", "content": user_input}])
         print(response.choices[0].message.content)
-
-
-
 
 
 if len(sys.argv)>=2:
